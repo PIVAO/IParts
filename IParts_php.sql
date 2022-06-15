@@ -1,4 +1,4 @@
--- Script do banco para rodar em php
+-- SCRIPT DO BD PARA RODAR EM PHP
 
 
 -- phpMyAdmin SQL Dump
