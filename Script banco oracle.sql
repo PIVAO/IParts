@@ -1,5 +1,7 @@
+-- SCRIPT PARA RODAR O DB NO ORACLE
+
 --
--- Banco de dados: `EAP_5S`
+-- Banco de dados: `iparts`
 --
 
 ----------------------------------------------------------
@@ -71,7 +73,7 @@ CREATE TABLE itempedido(
 	codproduto INT
 );
 
--- TRIGGER para NÃO deixar valores negativos serem INSERIDOS em ITEMPEDIDO,
+-- TRIGGER para NÃO deixar valores negativos serem INSERIDOS em ITEMPEDIDO
 
 CREATE OR REPLACE TRIGGER not_negativo
 BEFORE INSERT OR UPDATE
@@ -83,16 +85,6 @@ BEGIN
 	END IF;
 END;
 
-/*
--- Teste inserção negativo
-
-BEGIN
-	SELECT * FROM itempedido
-	INSERT INTO itempedido (codpedido,numeroitem,valorunitario,quantidade,codproduto) VALUES
-	(1,4,10,-5,5);
-	SELECT * FROM itempedido WHERE codpedido = 1;
-END;
-*/
 ------------------------------------------------------------------
 
 CREATE TABLE pagamento (
