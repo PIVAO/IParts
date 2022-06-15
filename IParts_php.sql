@@ -1,4 +1,7 @@
-﻿-- phpMyAdmin SQL Dump
+-- Script do banco para rodar em php
+
+
+-- phpMyAdmin SQL Dump
 -- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
